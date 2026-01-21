@@ -8,10 +8,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'sapi',
+      title: 'TypeDuels',
       debugShowCheckedModeBanner: false,
       routerConfig: router,
-
       themeMode: ThemeMode.dark,
       theme: lightTheme,
       darkTheme: darkTheme,
