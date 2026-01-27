@@ -18,11 +18,11 @@ const colorLightScheme = ColorScheme(
 // dark
 const colorDarkScheme = ColorScheme(
   brightness: Brightness.dark,
-  primary: Color(0XFF975FF7),
+  primary: Color(0XFFBE4FED),
   onPrimary: Colors.white,
   surface: Colors.black,
   onSurface: Colors.white,
-  secondary: Color(0xFF3DC564),
+  secondary: Color(0xFF20CBF1),
   onSecondary: Colors.black,
   error: Color(0xFFE9033A),
   onError: Colors.white,
@@ -78,14 +78,14 @@ class AppThemeColors extends ThemeExtension<AppThemeColors> {
 
   static AppThemeColors light = AppThemeColors(
     text400: Color(0xff616166),
-    base200: Color(0xffffffff),
+    base200: Color(0xFF20CBF1),
     background: Color(0xFFFFFFFF),
     white: Color(0xFFFFFFFF),
     black: Color(0xFF000000),
     text900: Color(0xFF18181B),
     text600: Color(0xFF52525B),
     text500: Color(0xFF71717A),
-    base: Color(0xFFECECED),
+    base: Color(0XFFBE4FED),
     line100: Color(0xFFF4F4F5),
     line200: Color(0xFFE4E4E7),
     icon900: Color(0xFF18181B),
@@ -102,14 +102,14 @@ class AppThemeColors extends ThemeExtension<AppThemeColors> {
 
   static AppThemeColors dark = AppThemeColors(
     text400: Color(0xff616166),
-    base200: Color(0xff353535),
+    base200: Color(0xFF20CBF1),
     background: Color(0xFF000000),
     white: Color(0xFFffffff),
     black: Color(0xFF000000),
     text900: Color(0xFFFFFFFF),
     text600: Color(0xFFB5B5BD),
     text500: Color(0xFF8D8D94),
-    base: Color(0xFF292929),
+    base: Color(0XFFBE4FED),
     line100: Color(0xFF292929),
     line200: Color(0xFF323233),
     icon900: Color(0xFFFFFFFF),
@@ -172,8 +172,7 @@ class AppThemeColors extends ThemeExtension<AppThemeColors> {
   }
 
   @override
-  ThemeExtension<AppThemeColors> lerp(
-      ThemeExtension<AppThemeColors>? other, double t) {
+  ThemeExtension<AppThemeColors> lerp(ThemeExtension<AppThemeColors>? other, double t) {
     if (other is! AppThemeColors) return this;
 
     return AppThemeColors(
